@@ -78,20 +78,20 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new WebpackBrowserPlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                screw_ie8: true,
-                warnings: false
-            },
-            mangle: {
-                screw_ie8: true
-            },
-            output: {
-                comments: false,
-                screw_ie8: true
-            },
-            except: ['$super', '$', 'exports', 'require'] //排除关键字
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         screw_ie8: true,
+        //         warnings: false
+        //     },
+        //     mangle: {
+        //         screw_ie8: true
+        //     },
+        //     output: {
+        //         comments: false,
+        //         screw_ie8: true
+        //     },
+        //     except: ['$super', '$', 'exports', 'require'] //排除关键字
+        // }),
         new webpack.optimize.CommonsChunkPlugin({
             name: ['vendors'],
             filename: "vendors.bundle.js",

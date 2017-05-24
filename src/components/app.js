@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Header from './header/index';
 import AboutMe from './about-me/index';
+import Experience from './experience/index';
+
 import './app.less';
 
 
@@ -18,7 +20,7 @@ class App extends Component {
                 </section>
                 {/*right*/}
                 <section className="app-right">
-
+                   <Experience /> 
                 </section>
             </div>
         );
